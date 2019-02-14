@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <org.webrtc.SurfaceViewRenderer
+                    android:id="@+id/surfRendererLocal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/darker_gray"
+                    android:gravity="center_horizontal"
+                    android:text="Local" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!-- 0,1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <org.webrtc.SurfaceViewRenderer
+                    android:id="@+id/surfRendererRemote0"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/holo_blue_dark"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/etCall0"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="number" />
+
+                    <Button
+                        android:id="@+id/btnConnect0"
+                        android:layout_width="55dp"
+                        android:layout_height="wrap_content"
+                        android:text="Con"
+                        android:textSize="10sp" />
+
+                    <Button
+                        android:id="@+id/btnClose0"
+                        android:layout_width="55dp"
+                        android:layout_height="wrap_content"
+                        android:text="Close"
+                        android:textSize="10sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <org.webrtc.SurfaceViewRenderer
+                    android:id="@+id/surfRendererRemote1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/holo_blue_dark"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/etCall1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="number" />
+
+                    <Button
+                        android:id="@+id/btnConnect1"
+                        android:layout_width="55dp"
+                        android:layout_height="wrap_content"
+                        android:text="Con"
+                        android:textSize="10sp" />
+
+                    <Button
+                        android:id="@+id/btnClose1"
+                        android:layout_width="55dp"
+                        android:layout_height="wrap_content"
+                        android:text="Close"
+                        android:textSize="10sp" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!-- 2,3 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <org.webrtc.SurfaceViewRenderer
+                    android:id="@+id/surfRendererRemote2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/holo_blue_dark"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/etCall2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="number" />
+
+                    <Button
+                        android:id="@+id/btnConnect2"
+                        android:layout_width="55dp"
+                        android:layout_height="wrap_content"
+                        android:text="Con"
+                        android:textSize="10sp" />
+
+                    <Button
+                        android:id="@+id/btnClose2"
+                        android:layout_width="55dp"
+                        android:layout_height="wrap_content"
+                        android:text="Close"
+                        android:textSize="10sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <org.webrtc.SurfaceViewRenderer
+                    android:id="@+id/surfRendererRemote3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/holo_blue_dark"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/etCall3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="number" />
+
+                    <Button
+                        android:id="@+id/btnConnect3"
+                        android:layout_width="55dp"
+                        android:layout_height="wrap_content"
+                        android:text="Con"
+                        android:textSize="10sp" />
+
+                    <Button
+                        android:id="@+id/btnClose3"
+                        android:layout_width="55dp"
+                        android:layout_height="wrap_content"
+                        android:text="Close"
+                        android:textSize="10sp" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>
